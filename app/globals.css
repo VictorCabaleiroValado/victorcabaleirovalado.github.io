@@ -40,3 +40,24 @@
 main>section+section{border-top:1px solid #65758a55}
 .contact{border-top:1px solid #65758a80}footer{border-top:1px solid #65758a55;padding-top:25px}
 @media(max-width:700px){.project{grid-template-columns:minmax(0,1fr);gap:28px}.project-cover{grid-column:1;grid-row:auto;width:100%;max-width:440px;justify-self:center}.project-copy>p:not(.project-kicker){font-size:16px}.project-evidence{padding:24px}.pipeline{grid-template-columns:1fr;gap:0}}
+
+/* Compact project presentation and clear light/dark section rhythm. */
+.work-section{background:#0c1017;color:#eef2f8;padding-block:65px}
+.work-section .section-heading{margin-bottom:28px}
+.project{gap:24px 32px;align-items:start}
+.project h3{font-size:34px;margin:16px 0}
+.project-copy>p:not(.project-kicker){font-size:15px;line-height:1.65;color:#b5c1d1}
+.project-kicker{color:#9eb8dc}.project .tags{margin:18px 0}.project .tags span{color:#bdcde3;border-color:#354354}
+.project .dark-button{background:#b4ceff;color:#101723;margin-top:0;padding:12px 16px}
+.project .text-link{color:#b3c8e6;margin-top:12px}
+.project-cover{align-self:center}
+.project-evidence{background:transparent;border-top:1px solid #65758a55;border-radius:0;padding:20px 0 0}
+.pipeline{margin:12px 0;gap:24px}.pipeline li{padding:8px 0 14px}.pipeline strong{font-size:15px}.pipeline small{font-size:12px}
+.project-numbers{display:flex;max-width:none;gap:32px;margin:14px 0}
+.project-numbers>div{display:flex;align-items:center;gap:10px}.project-numbers strong{font-size:26px;letter-spacing:-1px}.project-numbers span{max-width:none}
+.evidence-note{border:0;padding:0;margin:12px 0 0}
+.toolkit,.education{background:#fff;color:#122039}
+.toolkit .skill-grid article{background:#f7f9fc;border-color:#d5deea}
+.toolkit .skill-no{color:#526d8e}.toolkit .skill-grid p{color:#435974}.toolkit .tags span{color:#405978;border-color:#a9bdd5}
+.role{grid-template-columns:180px minmax(0,1fr);gap:30px}.role-date span{white-space:nowrap}
+@media(max-width:700px){.project h3{font-size:30px}.project{gap:20px}.project-cover{max-width:400px}.project-evidence{padding:18px 0 0}.pipeline{gap:0}.project-numbers{gap:18px;flex-wrap:wrap}.role{grid-template-columns:1fr;gap:15px}}
