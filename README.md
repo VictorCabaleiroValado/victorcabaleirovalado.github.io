@@ -2,7 +2,7 @@
 
 Professional portfolio covering data analytics, applied AI, projects, technical skills and education.
 
-**Live website:** https://victorvalado.github.io
+**Live website:** https://victorcabaleirovalado.github.io
 
 ## Development
 

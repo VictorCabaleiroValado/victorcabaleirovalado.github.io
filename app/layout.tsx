@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://victorvalado.github.io'),
+  metadataBase: new URL('https://victorcabaleirovalado.github.io'),
   alternates: {canonical: '/'},
-  title: 'Victor Cabaleiro | Data Analytics & Applied AI',
+  title: 'Victor Cabaleiro Valado | Data Analytics & Applied AI',
   description: 'Engineering, statistics and applied AI. Explore Victor Cabaleiro Valado’s experience, machine learning project and résumé.',
 };
 
