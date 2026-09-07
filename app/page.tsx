@@ -2,7 +2,7 @@ import { ArrowUpRight, ArrowDown, Download } from 'lucide-react';
 
 const github = 'https://github.com/VictorCabaleiroValado';
 const project = github + '/ML-Classifier-for-Fault-Diagnosis-in-Rotary-Machines';
-const linkedin = 'https://www.linkedin.com/in/victor-cabaleiro-valado/';
+const linkedin = 'https://www.linkedin.com/in/victorcabaleirovalado/';
 export default function Home() {
  return <main>
   <a className="skip" href="#content">Skip to content</a>
