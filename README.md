@@ -16,4 +16,4 @@ pnpm build
 
 The site exports static files to `dist/client`. GitHub Pages serves the committed `docs` directory from `main`. After a build, synchronize the exported files into `docs` and preserve `docs/.nojekyll`.
 
-The project cover is a conceptual illustration; it does not represent the original laboratory equipment or measured signals. The résumé and professional portrait were supplied by Victor.
+The project covers show an actual native Power BI export and the real motor-channel waveform for demo measurement 402. Rebuild the waveform with `python tools/build-signal-cover.py`; its display uses the demo min/max reduction of 64,000 original samples. The résumé and professional portrait were supplied by Victor.
