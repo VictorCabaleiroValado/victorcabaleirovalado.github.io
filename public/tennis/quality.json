@@ -1,0 +1,50 @@
+{
+  "source_rows": 16118,
+  "excluded_out_of_scope": 1616,
+  "excluded_incomplete_in_scope": 509,
+  "included_matches": 13993,
+  "player_appearances": 27986,
+  "players": 560,
+  "events": 352,
+  "stats_covered_matches": 13927,
+  "stats_coverage": 0.9952833559636961,
+  "by_season": [
+    {
+      "Season": 2020,
+      "appearances": 2474,
+      "wins": 1237,
+      "stats_covered": 2474
+    },
+    {
+      "Season": 2021,
+      "appearances": 4944,
+      "wins": 2472,
+      "stats_covered": 4814
+    },
+    {
+      "Season": 2022,
+      "appearances": 5094,
+      "wins": 2547,
+      "stats_covered": 5094
+    },
+    {
+      "Season": 2023,
+      "appearances": 5228,
+      "wins": 2614,
+      "stats_covered": 5228
+    },
+    {
+      "Season": 2024,
+      "appearances": 5322,
+      "wins": 2661,
+      "stats_covered": 5320
+    },
+    {
+      "Season": 2025,
+      "appearances": 4924,
+      "wins": 2462,
+      "stats_covered": 4924
+    }
+  ],
+  "source_snapshot": "83733587353df8a41f2fd4f516147d5aa83f5a8d"
+}
