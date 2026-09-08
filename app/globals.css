@@ -15,7 +15,7 @@
 /* Full portrait framing and balanced project artwork. */
 .hero{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);align-items:center}
 .portrait{align-self:center;min-height:0;width:100%;max-width:365px;justify-self:end}
-.portrait img{height:auto;aspect-ratio:2/3;object-fit:contain;object-position:center}
+.portrait img{height:auto;aspect-ratio:180/283;object-fit:contain;object-position:center}
 .project-cover{padding-top:28px}
 .project-cover img{width:calc(100% - 56px);max-width:820px;height:auto;aspect-ratio:1672/941;object-fit:contain;margin-inline:auto;border-radius:6px}
 .toolkit{background:#0c1017;color:#eef2f8;border-color:#293340}
@@ -25,7 +25,7 @@
 .education{background:#edf1f7;color:#122039;border-color:#bdcadb;margin-bottom:80px}
 .education-list article{border-color:#bdcadb}.education-list article>span,.education-list p{color:#405978}.education-list small{color:#526782}
 @media(max-width:900px){.hero{grid-template-columns:1.15fr 1fr;gap:32px}.portrait img{height:auto}}
-@media(max-width:640px){.hero{grid-template-columns:1fr}.portrait{justify-self:center;max-width:340px}.portrait img{height:auto;aspect-ratio:2/3}.project-cover{padding-top:18px}.project-cover img{width:calc(100% - 36px)}.education{margin-bottom:50px}}
+@media(max-width:640px){.hero{grid-template-columns:1fr}.portrait{justify-self:center;max-width:340px}.portrait img{height:auto;aspect-ratio:180/283}.project-cover{padding-top:18px}.project-cover img{width:calc(100% - 36px)}.education{margin-bottom:50px}}
 
 /* Prioritize the project story, with unframed supporting artwork. */
 .project{grid-template-columns:minmax(0,1.3fr) minmax(0,.85fr);gap:38px;border:0;border-radius:0;background:transparent;overflow:visible;align-items:center}
