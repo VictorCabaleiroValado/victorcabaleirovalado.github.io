@@ -61,3 +61,5 @@ main>section+section{border-top:1px solid #65758a55}
 .toolkit .skill-no{color:#526d8e}.toolkit .skill-grid p{color:#435974}.toolkit .tags span{color:#405978;border-color:#a9bdd5}
 .role{grid-template-columns:180px minmax(0,1fr);gap:30px}.role-date span{white-space:nowrap}
 @media(max-width:700px){.project h3{font-size:30px}.project{gap:20px}.project-cover{max-width:400px}.project-evidence{padding:18px 0 0}.pipeline{gap:0}.project-numbers{gap:18px;flex-wrap:wrap}.role{grid-template-columns:1fr;gap:15px}}
+
+.tennis-project{margin-top:54px;padding-top:42px;border-top:1px solid rgba(255,255,255,.2)}
