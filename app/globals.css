@@ -10,7 +10,7 @@
 
 .section-heading h2{font-size:clamp(2.5rem,5vw,4.5rem);white-space:normal}.experience,.education{display:block}.roles,.education-list{max-width:940px;margin-left:auto}.project-cover{grid-column:1/-1;margin:0;background:#0d1929;position:relative}.project-cover img{display:block;width:100%;height:auto;aspect-ratio:16/8;object-fit:cover}.project-cover figcaption{display:flex;justify-content:space-between;gap:16px;padding:15px 25px;color:#c6d8ee;font:11px var(--font-geist-mono),monospace;letter-spacing:1px}.project-cover figcaption span{color:#8b9db6}.secondary-project{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;margin-top:32px;padding:32px;border:1px solid #bdcadb;border-radius:12px}.secondary-project h3{font-size:30px;letter-spacing:-1px;line-height:1.2;margin:14px 0}.secondary-project p{color:#435974}.secondary-project .tags span{color:#405978;border-color:#a9bdd5}.model-visual{background:#101e32;border-radius:8px;padding:28px;color:#aac9ff;display:flex;flex-direction:column;justify-content:center}.model-visual>span{font:11px var(--font-geist-mono),monospace;letter-spacing:1px}.model-visual svg{width:100%;margin:20px 0}.model-visual small{font-size:11px;color:#9eaec5}@media(max-width:640px){.secondary-project{grid-template-columns:1fr;padding:22px;gap:20px}.project-cover img{aspect-ratio:4/3}.project-cover figcaption{font-size:9px;padding:12px}.role-date{align-items:flex-start;flex-direction:column;gap:6px}}
 
-.toolkit{background:#edf1f7;color:#122039;border-top:1px solid #bdcadb}.toolkit .skill-grid article{background:#e2eaf5;border-color:#bdcadb}.toolkit .skill-no{color:#526d8e}.toolkit .skill-grid p{color:#435974}.toolkit .tags span{color:#405978;border-color:#a9bdd5}.nav nav{gap:22px}.wordmark small{letter-spacing:0;font-size:13px}@media(max-width:1000px){.nav{flex-wrap:wrap;gap:18px}.wordmark small{display:inline}.nav nav{gap:18px;flex-wrap:wrap}}@media(max-width:640px){.nav nav a:first-child{display:flex}.nav nav{width:100%;gap:12px 18px}.wordmark small{font-size:12px}}
+.toolkit{background:#edf1f7;color:#122039;border-top:1px solid #bdcadb}.toolkit .skill-grid article{background:#e2eaf5;border-color:#bdcadb}.toolkit .skill-no{color:#9ab8df}.toolkit .skill-grid p{color:#abb7c9}.toolkit .tags span{color:#b4c6df;border-color:#354354}.nav nav{gap:22px}.wordmark small{letter-spacing:0;font-size:13px}@media(max-width:1000px){.nav{flex-wrap:wrap;gap:18px}.wordmark small{display:inline}.nav nav{gap:18px;flex-wrap:wrap}}@media(max-width:640px){.nav nav a:first-child{display:flex}.nav nav{width:100%;gap:12px 18px}.wordmark small{font-size:12px}}
 
 /* Full portrait framing and balanced project artwork. */
 .hero{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);align-items:center}
@@ -56,10 +56,14 @@ main>section+section{border-top:1px solid #65758a55}
 .project-numbers{display:flex;max-width:none;gap:32px;margin:14px 0}
 .project-numbers>div{display:flex;align-items:center;gap:10px}.project-numbers strong{font-size:26px;letter-spacing:-1px}.project-numbers span{max-width:none}
 .evidence-note{border:0;padding:0;margin:12px 0 0}
-.toolkit,.education{background:#fff;color:#122039}
-.toolkit .skill-grid article{background:#f7f9fc;border-color:#d5deea}
-.toolkit .skill-no{color:#526d8e}.toolkit .skill-grid p{color:#435974}.toolkit .tags span{color:#405978;border-color:#a9bdd5}
+.toolkit,.education{background:var(--background);color:var(--foreground);border-color:var(--border)}
+.toolkit .skill-grid article{background:#111923;border-color:#2a3749}
+.toolkit .skill-no{color:#9ab8df}.toolkit .skill-grid p{color:#abb7c9}.toolkit .tags span{color:#b4c6df;border-color:#354354}
 .role{grid-template-columns:180px minmax(0,1fr);gap:30px}.role-date span{white-space:nowrap}
 @media(max-width:700px){.project h3{font-size:30px}.project{gap:20px}.project-cover{max-width:400px}.project-evidence{padding:18px 0 0}.pipeline{gap:0}.project-numbers{gap:18px;flex-wrap:wrap}.role{grid-template-columns:1fr;gap:15px}}
 
 .tennis-project{margin-top:54px;padding-top:42px;border-top:1px solid rgba(255,255,255,.2)}
+
+/* Unified dark sections and clear access to both tennis dashboards. */
+.education-list article{border-color:var(--border)}.education-list article>span,.education-list p{color:#aac0e1}.education-list small{color:#a1aec1}
+.project-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px}.project-actions .button{padding:12px 16px}.project-actions .text-link{flex-basis:100%;margin-top:0}.powerbi-link{border-color:#9fb9de}.project-copy>p.powerbi-note{font-size:12px;color:#a6b5c9;line-height:1.65;margin-top:14px}
