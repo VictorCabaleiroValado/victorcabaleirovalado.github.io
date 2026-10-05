@@ -1,3 +1,5 @@
+/* Generic layout primitive: ARIA preserves semantics without imposing form/list markup on arbitrary children. */
+/* eslint-disable jsx-a11y/prefer-tag-over-role */
 'use client';
 
 import { useMemo } from 'react';

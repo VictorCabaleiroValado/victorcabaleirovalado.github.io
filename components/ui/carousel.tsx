@@ -1,3 +1,5 @@
+/* Generic layout primitive: ARIA preserves semantics without imposing form/list markup on arbitrary children. */
+/* eslint-disable jsx-a11y/prefer-tag-over-role */
 'use client';
 
 import * as React from 'react';
@@ -58,14 +60,13 @@ function Carousel({
     },
     plugins,
   );
-  const [canScrollPrev, setCanScrollPrev] = React.useState(false);
-  const [canScrollNext, setCanScrollNext] = React.useState(false);
-
-  const onSelect = React.useCallback((api: CarouselApi) => {
-    if (!api) return;
-    setCanScrollPrev(api.canScrollPrev());
-    setCanScrollNext(api.canScrollNext());
-  }, []);
+  const subscribe = React.useCallback((notify: () => void) => {
+    api?.on('reInit', notify);
+    api?.on('select', notify);
+    return () => { api?.off('reInit', notify); api?.off('select', notify); };
+  }, [api]);
+  const canScrollPrev = React.useSyncExternalStore(subscribe, () => api?.canScrollPrev() ?? false, () => false);
+  const canScrollNext = React.useSyncExternalStore(subscribe, () => api?.canScrollNext() ?? false, () => false);
 
   const scrollPrev = React.useCallback(() => {
     api?.scrollPrev();
@@ -93,16 +94,7 @@ function Carousel({
     setApi(api);
   }, [api, setApi]);
 
-  React.useEffect(() => {
-    if (!api) return;
-    onSelect(api);
-    api.on('reInit', onSelect);
-    api.on('select', onSelect);
 
-    return () => {
-      api?.off('select', onSelect);
-    };
-  }, [api, onSelect]);
 
   return (
     <CarouselContext.Provider

@@ -1,3 +1,5 @@
+/* Generic layout primitive: ARIA preserves semantics without imposing form/list markup on arbitrary children. */
+/* eslint-disable jsx-a11y/prefer-tag-over-role */
 'use client';
 
 import * as React from 'react';
@@ -43,6 +45,9 @@ const inputGroupAddonVariants = cva(
   },
 );
 
+// This optional pointer shortcut focuses the adjacent native input. Keyboard users
+// focus that input directly; adding a button role would nest the addon buttons.
+/* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */
 function InputGroupAddon({
   className,
   align = 'inline-start',
@@ -64,6 +69,8 @@ function InputGroupAddon({
     />
   );
 }
+
+/* eslint-enable jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */
 
 const inputGroupButtonVariants = cva(
   'gap-2 text-sm flex items-center shadow-none',
