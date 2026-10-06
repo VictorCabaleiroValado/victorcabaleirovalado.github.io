@@ -8,3 +8,6 @@ Keep a consistent project structure for future additions:
 - Use a current screenshot of the actual report or a plot of actual demo measurements as the cover.
 - Explain source provenance and limitations, link reproducible code and tests, and never invent findings.
 - Publish this portfolio on its existing github.io domain.
+
+- Every current and future project cover must use `.project-cover`: identical 16:9 width and height at each viewport, with `object-fit: cover` and no per-project dimension overrides. Verify all cover bounding boxes are exactly equal on desktop and mobile.
+- Project order: Power BI Data Quality & Operational Dashboard, Fault Diagnosis in Rotary Machines, then Azure Operations Data Platform.
